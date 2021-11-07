@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face{
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-family: 'Roboto';
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    background: #000000;
+    color: #fff;
+    display: flex;
+    width: 100%;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+.side-left{
+    flex-basis: 50%;
+    padding: 0 110px;
+}
+.side-right{
+    flex-basis: 50%;
+}
+
+/* side left */
+.side-left .logo{
+    width: 100px;
+    height: 100px;
+    transform: translateX(-30px);
+}
+.title-signup {
+    text-align: center;
+    margin: 15px 0;
+
+}
+.title-signup p{
+    color: #6C6F73;
+    font-size: 13px;
+    padding: 10px 0;
+}
+.login-with {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.google, .apple{
+    padding: 15px;
+    flex-basis: 48%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: -1px 0 0 0px rgba(61, 173, 233, .75),
+    -1px -1px 0 1px rgba(94, 142, 226, .25),
+    -1px -1px 0 1px rgba(94, 142, 226, .25),
+    0 -1px 0 1px rgba(126, 110, 218, .5),
+    0 1px 0 1px rgba(169, 110, 218, 0.5),
+    1px -1px 0 1px rgba(189, 79, 211, 0.25),
+    1px 1px 0 1px rgba(159, 79, 211, .25),
+    1px 0 0 0px rgba(191, 47, 203, .75);
+    transition: all .3s ;
+}
+.google:hover, .apple:hover{
+    box-shadow: none;
+    background: -webkit-linear-gradient(left, #3dade9, #bf2fcb);
+}
+.google{
+    margin-right: 5px;
+}
+.apple{
+    margin-left: 5px;
+}
+.login-with .icon{
+    font-size: 25px;
+}
+.or{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    color: #8B8B8B;
+}
+.or span{
+    width: 15px;
+    height: 1px;
+    background: #8B8B8B;
+    margin: 0 3px;
+}
+.form{
+    display: flex;
+    flex-flow: wrap column;
+}
+label{
+    padding-bottom: 5px;
+    color: #ddd;
+    text-transform: capitalize;
+}
+input{
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: #222222;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.btn{
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 10px;
+    background: -webkit-linear-gradient(left, #3dade9, #bf2fcb);
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.checkbox{
+    padding: 10px 0;
+}
+.checkbox input {
+  position: relative;
+}
+.checkbox input::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: #222222;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.checkbox input:checked::before {
+    background: -webkit-linear-gradient(left, #3dade9, #bf2fcb);
+}
+.checkbox input:checked::after {
+  position: absolute;
+  content: "\f00c";
+  font-family: "FontAwesome";
+  color: #fff;
+}
+.checkbox label{
+    text-transform: capitalize;
+    color: #8B8B8B;
+    padding-left: 5px;
+}
+.link{
+    text-align: center;
+    font-size: 15px;
+    color: #8B8B8B;
+    padding-top: 15px;
+}
+.link a{
+    color: #fff;
+    text-decoration: underline;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    color: #8B8B8B;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.msg{
+    width: 100%;
+    height: 23px;
+    font-family: 'Roboto';
+    color: #3C9E14;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- document type html -->
+<html lang="en"> <!-- html page -->
+<head> <!-- head page -->
+    <meta charset="UTF-8"> <!-- meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="form, formJS, form CSS, formHTML, form code">
+    <meta name="keywords" content="contact, login, form">
+    <meta name="auther" content="Mai Yahia Ismail Alhajeen">
+    <title>Sign Up</title> <!-- title page -->
+    <!-- related links -->
+    <link rel="shortcut icon" href="img/LogoDark.webp" style="border-radius: 50%;" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head><!-- end head page -->
+<body> <!-- body page -->
+    <div class="container"> <!-- start container page -->
+        <div class="side-left"> <!-- side-left signUp page  -->
+            <div class="logo"><img src="img/LogoDark.webp" alt="LogoDark"></div> <!-- logo img  -->
+            <div class="title-signup"> <!-- title page -->
+                <h1>Signup to Your Account</h1>
+                <p>Your Own Best Website</p>
+            </div> <!-- end title page -->
+            <div class="login-with"> <!-- div other ways to sign up -->
+                <div class="google"> <!-- google way -->
+                    <span class="fab fa-google icon"></span>
+                    <span>Login with Google</span>
+                </div>
+                <div class="apple"> <!-- apple way -->
+                    <span class="fab fa-apple icon"></span>
+                    <span>Login with Apple</span>
+                </div>
+            </div> <!-- end div other ways to sign up -->
+
+            <div class="or"><span></span>OR<span></span></div> <!-- OR -->
+
+            <form  onsubmit="return false" class="form"> <!-- start form -->
+                <label>username:</label>
+                <input type="text" id="username" placeholder="maielhajeen" required>
+                <label>email:</label>
+                <input type="email" id="email" placeholder="example@gmail.com" required>
+                <label>password:</label>
+                <input type="password" id="password" placeholder="*********" required>
+                <label>confirm password:</label>
+                <input type="password" id="password-confirm" placeholder="*********" required>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox" required>
+                    <label class="lbl-remember">remember me</label>
+                </div>
+                <button onclick="printInfo()" class="btn">sign up</button>
+                <div class="link">You Have an Account? <a href="#">Login!</a></div>
+                <div id="msg" class="msg"></div>
+            </form> <!-- end form -->
+            <footer class="footer">
+                <div class="privacy-policy">Privacy policy</div>
+                <div class="copyright">©Copyright 2022</div>
+            </footer>
+        </div> <!-- end side-left signUp page  -->
+
+        <div class="side-right"> <!-- side-right signUp page  -->
+            <img src="img/LogoDark.webp" alt="logo">
+        </div> <!-- end side-right signUp page  -->
+
+    </div> <!-- start container page -->
+    <!-- script links -->
+    <script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous"></script>
+    <script src="js/myjs.js"></script>
+    <script>
+        console.log("JS QUIZ");
+    </script>
+</body> <!-- end body page -->
+</html> <!-- end html page -->
